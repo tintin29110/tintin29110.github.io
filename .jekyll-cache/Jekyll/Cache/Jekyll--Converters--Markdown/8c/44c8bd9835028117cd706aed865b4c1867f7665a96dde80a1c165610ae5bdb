@@ -1,0 +1,9 @@
+I"-
+<figure class="highlight"><pre><code class="language-swift" data-lang="swift"><span class="kd">import</span> <span class="kt">Foundation</span>
+
+<span class="c1">// comment</span>
+<span class="k">if</span> <span class="k">let</span> <span class="nv">test</span> <span class="o">=</span> <span class="k">self</span><span class="o">.</span><span class="n">test</span> <span class="p">{</span>
+  <span class="nf">print</span><span class="p">(</span><span class="s">"this is test"</span><span class="p">)</span>
+<span class="p">}</span></code></pre></figure>
+
+:ET
