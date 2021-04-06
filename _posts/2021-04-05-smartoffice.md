@@ -5,7 +5,7 @@ cover:  assets/images/SmartOffice-cover.png
 navigation: True
 title: Smart Office
 date: 2021-04-04 10:00:00
-tags: Portfolio
+tags: portfolio
 class: post-template
 subclass: 'post'
 author: seyoon
