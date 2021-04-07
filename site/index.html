@@ -15,9 +15,9 @@
     <meta name="HandheldFriendly" content="True" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Styles'n'Scripts -->
-    <link rel="stylesheet" type="text/css" href="assets/built/screen.css" />
-    <link rel="stylesheet" type="text/css" href="assets/built/screen.edited.css" />
-    <link rel="stylesheet" type="text/css" href="assets/built/syntax.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/screen.edited.css" />
+    <link rel="stylesheet" type="text/css" href="/assets/built/syntax.css" />
     <!-- highlight.js -->
     <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/9.12.0/styles/default.min.css">
     <style>.hljs { background: none; }</style>
@@ -35,8 +35,8 @@
 
     <!-- This tag outputs SEO meta+structured data and other important settings -->
     <meta name="description" content="sangeun portfolio" />
-    <link rel="shortcut icon" href="http://localhost:4000assets/images/favicon.png" type="image/png" />
-    <link rel="canonical" href="http://localhost:4000" />
+    <link rel="shortcut icon" href="http://localhost:4000/assets/images/favicon.png" type="image/png" />
+    <link rel="canonical" href="http://localhost:4000/" />
     <meta name="referrer" content="no-referrer-when-downgrade" />
 
      <!--title below is coming from _includes/dynamic_title-->
@@ -44,14 +44,14 @@
     <meta property="og:type" content="website" />
     <meta property="og:title" content="bello" />
     <meta property="og:description" content="sangeun portfolio" />
-    <meta property="og:url" content="http://localhost:4000" />
-    <meta property="og:image" content="http://localhost:4000assets/images/blog-cover.jpg" />
+    <meta property="og:url" content="http://localhost:4000/" />
+    <meta property="og:image" content="http://localhost:4000/assets/images/blog-cover.jpg" />
     <meta property="article:publisher" content="https://www.facebook.com/false" />
     <meta name="twitter:card" content="summary_large_image" />
     <meta name="twitter:title" content="bello" />
     <meta name="twitter:description" content="sangeun portfolio" />
-    <meta name="twitter:url" content="http://localhost:4000" />
-    <meta name="twitter:image" content="http://localhost:4000assets/images/blog-cover.jpg" />
+    <meta name="twitter:url" content="http://localhost:4000/" />
+    <meta name="twitter:image" content="http://localhost:4000/assets/images/blog-cover.jpg" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="bello" />
     <meta name="twitter:site" content="@false" />
@@ -66,18 +66,18 @@
     "publisher": {
         "@type": "Organization",
         "name": "bello",
-        "logo": "http://localhost:4000"
+        "logo": "http://localhost:4000/"
     },
-    "url": "http://localhost:4000",
+    "url": "http://localhost:4000/",
     "image": {
         "@type": "ImageObject",
-        "url": "http://localhost:4000assets/images/blog-cover.jpg",
+        "url": "http://localhost:4000/assets/images/blog-cover.jpg",
         "width": 2000,
         "height": 666
     },
     "mainEntityOfPage": {
         "@type": "WebPage",
-        "@id": "http://localhost:4000"
+        "@id": "http://localhost:4000/"
     },
     "description": "sangeun portfolio"
 }
@@ -92,7 +92,7 @@
     </script> -->
 
     <meta name="generator" content="Jekyll 3.6.2" />
-    <link rel="alternate" type="application/rss+xml" title="bello" href="feed.xml" />
+    <link rel="alternate" type="application/rss+xml" title="bello" href="/feed.xml" />
 
 
 </head>
@@ -105,7 +105,7 @@
 into the {body} of the default.hbs template -->
 
 <!-- The big featured header, it uses blog cover image as a BG if available -->
-<header class="site-header outer " style="background-image:  url(assets/images/blog-cover.jpg) ">
+<header class="site-header outer " style="background-image:  url(/assets/images/blog-cover.jpg) ">
     <div class="inner">
         <div class="site-header-content">
             <h1 class="site-title">
@@ -120,9 +120,10 @@ into the {body} of the default.hbs template -->
         
         
             <ul class="nav" role="menu">
-    <li class="nav-home" role="menuitem"><a href="">Home</a></li>
-    <li class="nav-about" role="menuitem"><a href="about/">About</a></li>
-    <li class="nav-portfolio" role="menuitem"><a href="tag/Portfolio/">PORTFOLIO</a></li>
+    <li class="nav-home" role="menuitem"><a href="/">Home</a></li>
+    <li class="nav-about" role="menuitem"><a href="/about/">About</a></li>
+    <li class="nav-portfolio" role="menuitem"><a href="/tag/Portfolio/">PORTFOLIO</a></li>
+    <li class="nav-devlog" role="menuitem"><a href="/tag/devlog/">DEVLOG</a></li>
     <!-- <li class="nav-try-ghost" role="menuitem"><a href="https://ghost.org">Try Ghost</a></li> -->
 </ul>
 
@@ -151,12 +152,12 @@ into the {body} of the default.hbs template -->
 
     <article class="post-card home-template">
         
-            <a class="post-card-image-link" href="smartoffice">
-                <div class="post-card-image" style="background-image: url(assets/images/SmartOffice-cover.png)"></div>
+            <a class="post-card-image-link" href="/smartoffice">
+                <div class="post-card-image" style="background-image: url(/assets/images/SmartOffice-cover.png)"></div>
             </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="smartoffice">
+            <a class="post-card-content-link" href="/smartoffice">
                 <header class="post-card-header">
                     
                         
@@ -181,7 +182,7 @@ into the {body} of the default.hbs template -->
                     
                         
                         <span class="post-card-author">
-                            <a href="author/seyoon/">Sangeun Yoon</a>
+                            <a href="/author/seyoon/">Sangeun Yoon</a>
                         </span>
                     
                 
@@ -195,10 +196,14 @@ into the {body} of the default.hbs template -->
         </div>
     </article>
 
-    <article class="post-card home-template no-image">
+    <article class="post-card home-template">
+        
+            <a class="post-card-image-link" href="/useful-log">
+                <div class="post-card-image" style="background-image: url(/assets/images/useful_log_cover.png)"></div>
+            </a>
         
         <div class="post-card-content">
-            <a class="post-card-content-link" href="useful-log">
+            <a class="post-card-content-link" href="/useful-log">
                 <header class="post-card-header">
                     
                         
@@ -212,7 +217,10 @@ into the {body} of the default.hbs template -->
                 </header>
                 <section class="post-card-excerpt">
                     
-                        <p>```swift func DEBUG_LOG(_ msg: Any, file: String = #file, function: String = #function, line: Int = #line) { let filename = file.split(separator: “/”).last ?? “” let funcName = function.split(separator: “(“).first ?? “” print(“👻</p>
+                        <p>print(“error”) 보다 조금 더 쓸 모 있는 로그를 찍기 위한 함수
+메시지에 자동으로 함수와 라인이 포함되어 표시되므로 디버깅에 유용하다.
+
+</p>
                     
                 </section>
             </a>
@@ -221,7 +229,7 @@ into the {body} of the default.hbs template -->
                     
                         
                         <span class="post-card-author">
-                            <a href="author/seyoon/">Sangeun Yoon</a>
+                            <a href="/author/seyoon/">Sangeun Yoon</a>
                         </span>
                     
                 
@@ -248,12 +256,12 @@ into the {body} of the default.hbs template -->
         <!-- The footer at the very bottom of the screen -->
         <footer class="site-footer outer">
             <div class="site-footer-content inner">
-                <section class="copyright"><a href="http://localhost:4000">bello</a> &copy; 2021</section>
+                <section class="copyright"><a href="http://localhost:4000/">bello</a> &copy; 2021</section>
                 <section class="poweredby">Proudly published with <a href="https://jekyllrb.com/">Jekyll</a> &
                     <a href="https://pages.github.com/" target="_blank" rel="noopener">GitHub Pages</a> using
                     <a href="https://github.com/jekyller/jasper2" target="_blank" rel="noopener">Jasper2</a></section>
                 <!-- <nav class="site-footer-nav">
-                    <a href="">Latest Posts</a>
+                    <a href="/">Latest Posts</a>
                     
                     
                     <a href="https://ghost.org" target="_blank" rel="noopener">Ghost</a>
@@ -280,7 +288,7 @@ into the {body} of the default.hbs template -->
         integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
         crossorigin="anonymous">
     </script>
-    <script type="text/javascript" src="assets/js/jquery.fitvids.js"></script>
+    <script type="text/javascript" src="/assets/js/jquery.fitvids.js"></script>
     <script type="text/javascript" src="https://demo.ghost.io/assets/js/jquery.fitvids.js?v=724281a32e"></script>
 
 
@@ -289,7 +297,7 @@ into the {body} of the default.hbs template -->
     <!-- <script>
         var maxPages = parseInt('1');
     </script>
-    <script src="assets/js/infinitescroll.js"></script> -->
+    <script src="/assets/js/infinitescroll.js"></script> -->
     <!-- /endif -->
 
     

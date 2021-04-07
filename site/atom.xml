@@ -25,12 +25,8 @@
       <item>
         <title>Logger for Useful Logs</title>
         
-          <description>&lt;p&gt;```swift
-func DEBUG_LOG(_ msg: Any, file: String = #file, function: String = #function, line: Int = #line) {
-    let filename = file.split(separator: “/”).last ?? “”
-    let funcName = function.split(separator: “(“).first ?? “”
-    print(“👻 [(filename)] (funcName)((line)): (msg)”)
-}&lt;/p&gt;
+          <description>&lt;h4 id=&quot;printerror-보다-조금-더-쓸-모-있는-로그를-찍기-위한-함수&quot;&gt;print(“error”) 보다 조금 더 쓸 모 있는 로그를 찍기 위한 함수&lt;/h4&gt;
+&lt;p&gt;메시지에 자동으로 함수와 라인이 포함되어 표시되므로 디버깅에 유용하다.&lt;/p&gt;
 
 </description>
         

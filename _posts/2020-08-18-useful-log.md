@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover:  False
+cover:  assets/images/useful_log_cover.png
 navigation: True
 title: Logger for Useful Logs
 date: 2020-08-18 10:47:00

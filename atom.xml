@@ -1,45 +1,28 @@
+---
+layout: null
+---
 <?xml version="1.0" encoding="UTF-8"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title> - Articles</title>
-    <description>sangeun portfolio</description>
+    <title>{{ site.name | xml_escape }} - Articles</title>
+    <description>{% if site.description %}{{ site.description | xml_escape }}{% endif %}</description>
     <link>
-    http://localhost:4000</link>
-    
-      
+    {{ site.url }}</link>
+    {% for post in site.posts %}
+      {% unless post.link %}
       <item>
-        <title>Smart Office</title>
-        
-          <description>&lt;p&gt;Hey! Welcome to Ghost, it’s great to have you :)&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Sun, 04 Apr 2021 19:00:00 +0900</pubDate>
+        <title>{{ post.title | xml_escape }}</title>
+        {% if post.excerpt %}
+          <description>{{ post.excerpt | xml_escape }}</description>
+        {% else %}
+          <description>{{ post.content | xml_escape }}</description>
+        {% endif %}
+        <pubDate>{{ post.date | date: "%a, %d %b %Y %H:%M:%S %z" }}</pubDate>
         <link>
-        http://localhost:4000/smartoffice</link>
-        <guid isPermaLink="true">http://localhost:4000/smartoffice</guid>
+        {{ site.url }}{{ post.url }}</link>
+        <guid isPermaLink="true">{{ site.url }}{{ post.url }}</guid>
       </item>
-      
-    
-      
-      <item>
-        <title>Logger for Useful Logs</title>
-        
-          <description>&lt;p&gt;```swift
-func DEBUG_LOG(_ msg: Any, file: String = #file, function: String = #function, line: Int = #line) {
-    let filename = file.split(separator: “/”).last ?? “”
-    let funcName = function.split(separator: “(“).first ?? “”
-    print(“👻 [(filename)] (funcName)((line)): (msg)”)
-}&lt;/p&gt;
-
-</description>
-        
-        <pubDate>Tue, 18 Aug 2020 19:47:00 +0900</pubDate>
-        <link>
-        http://localhost:4000/useful-log</link>
-        <guid isPermaLink="true">http://localhost:4000/useful-log</guid>
-      </item>
-      
-    
+      {% endunless %}
+    {% endfor %}
   </channel>
 </rss>

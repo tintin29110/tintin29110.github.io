@@ -45,7 +45,7 @@
     <meta property="og:title" content="Logger for Useful Logs" />
     <meta property="og:description" content="print(“error”) 보다 조금 더 쓸 모 있는 로그를 찍기 위한 함수 메시지에 자동으로 함수와 라인이 포함되어 표시되므로 디버깅에 유용하다. func DEBUG_LOG(_ msg: Any, file: String = #file, function: String = #function, line: Int = #line) { let filename = file.split(separator: "/").last ?? "" let funcName = function.split(separator: "(").first ?? """ />
     <meta property="og:url" content="http://localhost:4000/useful-log" />
-    <meta property="og:image" content="http://localhost:4000/assets/images/blog-cover.jpg" />
+    <meta property="og:image" content="http://localhost:4000/assets/images/useful_log_cover.png" />
     <meta property="article:publisher" content="https://www.facebook.com/false" />
     <meta property="article:author" content="https://www.facebook.com/false" />
     <meta property="article:published_time" content="2020-08-18T19:47:00+09:00" />
@@ -55,7 +55,7 @@
     <meta name="twitter:title" content="Logger for Useful Logs" />
     <meta name="twitter:description" content="print(“error”) 보다 조금 더 쓸 모 있는 로그를 찍기 위한 함수 메시지에 자동으로 함수와 라인이 포함되어 표시되므로 디버깅에 유용하다. func DEBUG_LOG(_ msg: Any, file: String = #file, function: String = #function, line: Int = #line) { let filename = file.split(separator: "/").last ?? "" let funcName = function.split(separator: "(").first ?? """ />
     <meta name="twitter:url" content="http://localhost:4000/" />
-    <meta name="twitter:image" content="http://localhost:4000/assets/images/blog-cover.jpg" />
+    <meta name="twitter:image" content="http://localhost:4000/assets/images/useful_log_cover.png" />
     <meta name="twitter:label1" content="Written by" />
     <meta name="twitter:data1" content="bello" />
     <meta name="twitter:label2" content="Filed under" />
@@ -77,7 +77,7 @@
     "url": "http://localhost:4000/useful-log",
     "image": {
         "@type": "ImageObject",
-        "url": "http://localhost:4000/assets/images/blog-cover.jpg",
+        "url": "http://localhost:4000/assets/images/useful_log_cover.png",
         "width": 2000,
         "height": 666
     },
@@ -125,6 +125,7 @@ into the {body} of the default.hbs template -->
     <li class="nav-home" role="menuitem"><a href="/">Home</a></li>
     <li class="nav-about" role="menuitem"><a href="/about/">About</a></li>
     <li class="nav-portfolio" role="menuitem"><a href="/tag/Portfolio/">PORTFOLIO</a></li>
+    <li class="nav-devlog" role="menuitem"><a href="/tag/devlog/">DEVLOG</a></li>
     <!-- <li class="nav-try-ghost" role="menuitem"><a href="https://ghost.org">Try Ghost</a></li> -->
 </ul>
 
@@ -148,7 +149,7 @@ into the {body} of the default.hbs template -->
 <main id="site-main" class="site-main outer" role="main">
     <div class="inner">
 
-        <article class="post-full  tag-devlog post no-image">
+        <article class="post-full  tag-devlog post ">
 
             <header class="post-full-header">
                 <section class="post-full-meta">
@@ -165,6 +166,9 @@ into the {body} of the default.hbs template -->
                 <h1 class="post-full-title">Logger for Useful Logs</h1>
             </header>
 
+            
+            <figure class="post-full-image" style="background-image: url(/assets/images/useful_log_cover.png)">
+            </figure>
             
 
             <section class="post-full-content">
@@ -303,7 +307,7 @@ into the {body} of the default.hbs template -->
     </div>
     <span class="floating-header-divider">&mdash;</span>
     <div class="floating-header-title">Logger for Useful Logs</div>
-    <div class="floating-header-share">
+    <!-- <div class="floating-header-share">
         <div class="floating-header-share-label">Share this <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24">
     <path d="M7.5 15.5V4a1.5 1.5 0 1 1 3 0v4.5h2a1 1 0 0 1 1 1h2a1 1 0 0 1 1 1H18a1.5 1.5 0 0 1 1.5 1.5v3.099c0 .929-.13 1.854-.385 2.748L17.5 23.5h-9c-1.5-2-5.417-8.673-5.417-8.673a1.2 1.2 0 0 1 1.76-1.605L7.5 15.5zm6-6v2m-3-3.5v3.5m6-1v2"/>
 </svg>
@@ -318,7 +322,7 @@ into the {body} of the default.hbs template -->
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><path d="M19 6h5V0h-5c-3.86 0-7 3.14-7 7v3H8v6h4v16h6V16h5l1-6h-6V7c0-.542.458-1 1-1z"/></svg>
 
         </a>
-    </div>
+    </div> -->
     <progress class="progress" value="0">
         <div class="progress-container">
             <span class="progress-bar"></span>

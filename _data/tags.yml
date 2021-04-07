@@ -4,5 +4,5 @@ portfolio:
   cover: False
 devlog:
   name: devlog
-  description: log
+  description: devlog
   cover: False
