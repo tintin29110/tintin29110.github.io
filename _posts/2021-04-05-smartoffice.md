@@ -1,7 +1,7 @@
 ---
 layout: post
 current: post
-cover:  assets/images/SmartOffice-cover.png
+cover:  assets/images/Portfolio_SmartOffice/SmartOffice-cover.png
 navigation: True
 title: Smart Office
 date: 2021-04-04 10:00:00
@@ -11,18 +11,11 @@ subclass: 'post'
 author: seyoon
 ---
 
-Hey! Welcome to Ghost, it's great to have you :)
+<div align="center"><h6>내 회의</h6></div>
+<img src="assets/images/Portfolio_SmartOffice/SmartOffice_MyMeeting.jpg" alt="mymeeting" width="700"/>
+<div align="center"><h6>회의 예약</h6></div>
+<img src="assets/images/Portfolio_SmartOffice/SmartOffice_Timeline.jpg" alt="timeline" width="700"/>
+<img src="assets/images/Portfolio_SmartOffice/SmartOffice_DetailReservation.jpg" alt="reservation" width="700"/>
 
-We know that first impressions are important, so we've populated your new site with some initial **Getting Started** posts that will help you get familiar with everything in no time. This is the first one!
-
-### There are a few things that you should know up-front:
-1. Ghost is designed for ambitious, professional publishers who want to actively build a business around their content. That's who it works best for. If you're using Ghost for some other purpose, that's fine too - but it might not be the best choice for you.
-2. The entire platform can be modified and customized to suit your needs, which is very powerful, but doing so **does** require some knowledge of code. Ghost is not necessarily a good platform for beginners or people who just want a simple personal blog.
-3. For the best experience we recommend downloading the Ghost Desktop App for your computer, which is the best way to access your Ghost site on a desktop device.
-
-
-Ghost is made by an independent non-profit organisation called the Ghost Foundation. We are 100% self funded by revenue from our [Ghost(Pro)](https://ghost.org/pricing) service, and every penny we make is re-invested into funding further development of free, open source technology for modern journalism.
-
-The main thing you'll want to read about next is probably: [the Ghost editor](https://demo.ghost.io/the-editor/).
-
-Once you're done reading, you can simply delete the default **Ghost** user from your team to remove all of these introductory posts!
+<div align="center"><h6>DEMO</h6></div>
+<img src="assets/images/Portfolio_SmartOffice/SmartOffice_demo.gif" alt="demo" width="300"/>
