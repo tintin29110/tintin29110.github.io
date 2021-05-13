@@ -1,4 +1,85 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-04-09T18:29:16+09:00</updated><id>http://localhost:4000/</id><title type="html">bello</title><subtitle>sangeun portfolio</subtitle><entry><title type="html">Smart Office</title><link href="http://localhost:4000/smartoffice" rel="alternate" type="text/html" title="Smart Office" /><published>2021-04-04T19:00:00+09:00</published><updated>2021-04-04T19:00:00+09:00</updated><id>http://localhost:4000/smartoffice</id><content type="html" xml:base="http://localhost:4000/smartoffice">&lt;div align=&quot;center&quot;&gt;&lt;h6&gt;내 회의&lt;/h6&gt;&lt;/div&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-05-13T07:53:44+09:00</updated><id>http://localhost:4000/</id><title type="html">bello</title><subtitle>sangeun portfolio</subtitle><entry><title type="html">Jenkins macOS Agent</title><link href="http://localhost:4000/jenkins-mac-os-agent" rel="alternate" type="text/html" title="Jenkins macOS Agent" /><published>2021-05-07T19:47:00+09:00</published><updated>2021-05-07T19:47:00+09:00</updated><id>http://localhost:4000/jenkins-mac-os-agent</id><content type="html" xml:base="http://localhost:4000/jenkins-mac-os-agent">&lt;h1 id=&quot;mac-os-agent&quot;&gt;mac OS Agent&lt;/h1&gt;
+
+&lt;p&gt;Master (Jenkins Server)&lt;/p&gt;
+
+&lt;p&gt;Agent (mac OS Agent)&lt;/p&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;
+    &lt;p&gt;Agent에서 jenkins 유저 생성 + 관리자 권한 부여&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;assets/images/2021-05-07-jenkins-mac-os-agent(1).png&quot; alt=&quot;2021-05-07-jenkins-mac-os-agent(1).png&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Master에서 /var/lib/jenkins/.ssh 경로에 SSH Key 생성&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; ssh-keygen &lt;span class=&quot;nt&quot;&gt;-f&lt;/span&gt; /var/lib/jenkins/.ssh/jenkins_agent_key
+
+ &lt;span class=&quot;c&quot;&gt;# known_hosts 파일 없을 경우&lt;/span&gt;
+ &lt;span class=&quot;c&quot;&gt;# touch /var/lib/jenkins/.ssh/known_hosts&lt;/span&gt;
+ ssh-keyscan jenkins_agent_key.pub &lt;span class=&quot;o&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt; known_hosts
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;
+    &lt;p&gt;Agent에서 파일 및 경로, 권한 셋팅&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; touch ~/.ssh/authorized_keys
+
+ chown &lt;span class=&quot;nt&quot;&gt;-R&lt;/span&gt; jenkins ~/.ssh
+ chmod 600 ~/.ssh/authorized_keys
+ chmod 700 ~/.ssh
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;h3 id=&quot;여기서부터는-jenkins-dashboard에서&quot;&gt;여기서부터는 Jenkins Dashboard에서&lt;/h3&gt;
+
+&lt;ol&gt;
+  &lt;li&gt;Manage Jenkins - Manage Credentials - Add Credentials
+    &lt;ul&gt;
+      &lt;li&gt;[http://192.8.203.103:9001/credentials/store/system/domain/&lt;em&gt;/newCredentials](http://192.8.203.103:9001/credentials/store/system/domain/&lt;/em&gt;/newCredentials)&lt;/li&gt;
+    &lt;/ul&gt;
+  &lt;/li&gt;
+  &lt;li&gt;SSH Username with private key
+    &lt;ul&gt;
+      &lt;li&gt;ID : 해당 Credential을 구분할 ID&lt;/li&gt;
+      &lt;li&gt;Description: 해당 Credential에 대한 설명&lt;/li&gt;
+      &lt;li&gt;Username: SSH Client (=Agent)에 접속할 때 쓸 username&lt;/li&gt;
+      &lt;li&gt;Private Key: Enter directly 라디오 버튼 누르면 뜨는 텍스트 필드에 Private Key의 값 입력. 추출 방법은 아래에 명령어 참고.&lt;/li&gt;
+      &lt;li&gt;Passphrase: SSH 생성 시 입력한 비밀번호&lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;&lt;img src=&quot;assets/images/2021-05-07-jenkins-mac-os-agent(2).png&quot; alt=&quot;2021-05-07-jenkins-mac-os-agent(2).png&quot; /&gt;&lt;/p&gt;
+
+    &lt;div class=&quot;language-bash highlighter-rouge&quot;&gt;&lt;div class=&quot;highlight&quot;&gt;&lt;pre class=&quot;highlight&quot;&gt;&lt;code&gt; more /var/lib/jenkins/.ssh/jenkins_agent_key
+&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;    &lt;/div&gt;
+  &lt;/li&gt;
+  &lt;li&gt;Manage Jenkins - Manage Nodes and Clouds - New Node
+    &lt;ul&gt;
+      &lt;li&gt;Name, Description: 새 Agent의 이름과 설명&lt;/li&gt;
+      &lt;li&gt;Remote root directory: 위에서 jenkins 라는 사용자를 만들었다면 /Users/jenkins가 root directory가 된다 (macOS 기준)&lt;/li&gt;
+      &lt;li&gt;Labels: Pipeline에서 이 Agent를 지정할 때 사용할 라벨명&lt;/li&gt;
+      &lt;li&gt;Usage: 작업 노드가 지정되지 않은 작업이고 해당 에이전트에 여유가 있을 경우 이 에이전트를 활용할지, 명시적으로 라벨을 통해 지정되었을 경우에만 활용할지&lt;/li&gt;
+      &lt;li&gt;Launch agents via SSH: 위에서 생성한 SSH Credential을 이용해 접속
+        &lt;ul&gt;
+          &lt;li&gt;Host: 연결할 Agent의 URL 이나 IP 주소&lt;/li&gt;
+          &lt;li&gt;Credentials: 위에서 생성한 Credential 선택&lt;/li&gt;
+          &lt;li&gt;Host Key Verification Strategy: 위에서 Master의 known_hosts 파일 작업을 해주었으므로 Known hosts file Verification Strategy 선택&lt;/li&gt;
+        &lt;/ul&gt;
+      &lt;/li&gt;
+    &lt;/ul&gt;
+
+    &lt;p&gt;&lt;img src=&quot;assets/images/2021-05-07-jenkins-mac-os-agent(3).png&quot; alt=&quot;2021-05-07-jenkins-mac-os-agent(3).png&quot; /&gt;&lt;/p&gt;
+
+    &lt;p&gt;&lt;img src=&quot;assets/images/2021-05-07-jenkins-mac-os-agent(4).png&quot; alt=&quot;2021-05-07-jenkins-mac-os-agent(4).png&quot; /&gt;&lt;/p&gt;
+  &lt;/li&gt;
+&lt;/ol&gt;
+
+&lt;p&gt;모두 입력 후에 Node Launch 했을 때 아래와 같은 로그가 찍히면 연결 성공.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/2021-05-07-jenkins-mac-os-agent(5).png&quot; alt=&quot;2021-05-07-jenkins-mac-os-agent(5).png&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;assets/images/2021-05-07-jenkins-mac-os-agent(6).png&quot; alt=&quot;2021-05-07-jenkins-mac-os-agent(6).png&quot; /&gt;&lt;/p&gt;</content><author><name>Sangeun Yoon</name></author><category term="devlog" /><summary type="html">mac OS Agent</summary></entry><entry><title type="html">Smart Office</title><link href="http://localhost:4000/smartoffice" rel="alternate" type="text/html" title="Smart Office" /><published>2021-04-04T19:00:00+09:00</published><updated>2021-04-04T19:00:00+09:00</updated><id>http://localhost:4000/smartoffice</id><content type="html" xml:base="http://localhost:4000/smartoffice">&lt;div align=&quot;center&quot;&gt;&lt;h6&gt;내 회의&lt;/h6&gt;&lt;/div&gt;
 &lt;p&gt;&lt;img src=&quot;assets/images/Portfolio_SmartOffice/SmartOffice_MyMeeting.jpg&quot; alt=&quot;mymeeting&quot; width=&quot;700&quot; /&gt;&lt;/p&gt;
 &lt;div align=&quot;center&quot;&gt;&lt;h6&gt;회의 예약&lt;/h6&gt;&lt;/div&gt;
 &lt;p&gt;&lt;img src=&quot;assets/images/Portfolio_SmartOffice/SmartOffice_Timeline.jpg&quot; alt=&quot;timeline&quot; width=&quot;700&quot; /&gt;
