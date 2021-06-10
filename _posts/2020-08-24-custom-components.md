@@ -10,7 +10,6 @@ class: post-template
 subclass: 'post'
 author: seyoon
 ---
-test : https://www.notion.so/seyoon37/1-Meet-async-await-in-Swift-d5b31f54404a44d79696b5fee0200741
 
 #### 체크박스
 
@@ -227,3 +226,5 @@ let cardViewVideoSwitch: CustomSwitch =  {
     }
 }
 {% endhighlight %}
+
+[notion test](https://www.notion.so/seyoon37/1-Meet-async-await-in-Swift-d5b31f54404a44d79696b5fee0200741)
