@@ -10,6 +10,8 @@ class: post-template
 subclass: 'post'
 author: seyoon
 ---
+test : https://www.notion.so/seyoon37/1-Meet-async-await-in-Swift-d5b31f54404a44d79696b5fee0200741
+
 #### 체크박스
 
 > 이미지만 바꾸어서 라디오버튼으로도 사용 가능하다. 물론 그룹 중 하나만 선택되는 로직은 추가 구현 필요.
