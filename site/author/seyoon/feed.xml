@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/author/seyoon/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-05-13T07:53:44+09:00</updated>
+  <updated>2021-06-25T13:19:25+09:00</updated>
   <id>http://localhost:4000/author/seyoon/feed.xml</id>
 
   
@@ -30,6 +30,44 @@
   
   
 
+  
+    <entry>
+      <title type="html">Knowledge List</title>
+      <link href="http://localhost:4000/knowledge-list" rel="alternate" type="text/html" title="Knowledge List" />
+      <published>2021-06-24T21:53:23+09:00</published>
+      <updated>2021-06-24T21:53:23+09:00</updated>
+      <id>http://localhost:4000/knowledge-list</id>
+      <content type="html" xml:base="http://localhost:4000/knowledge-list">&lt;p&gt;&lt;a href=&quot;https://tintin29110.github.io/smartoffice&quot;&gt;Smart Office&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.notion.so/seyoon37/b310fb9c48034e8eb0116a20e6850647?v=4a918eb3861840269b33b8a142ce2295&quot;&gt;Swift Code Snippet&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.notion.so/seyoon37/Jenkins-5586472fa10046a9a80ceb88d2d9b5ed&quot;&gt;Jenkins&lt;/a&gt;&lt;/p&gt;</content>
+
+      
+      
+      
+      
+      
+
+      <author>
+          <name>Sangeun Yoon</name>
+        
+        
+      </author>
+
+      
+
+      
+        <category term="portfolio" />
+      
+
+      
+        <summary type="html">Smart Office</summary>
+      
+
+      
+      
+    </entry>
   
     <entry>
       <title type="html">Jenkins macOS Agent</title>
@@ -455,7 +493,9 @@
         &lt;span class=&quot;k&quot;&gt;self&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;buildingTextBtn&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;nf&quot;&gt;setTitle&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;(&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;buildings&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;[&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;selectedBuilding&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;],&lt;/span&gt; &lt;span class=&quot;nv&quot;&gt;for&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;:&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;normal&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;)&lt;/span&gt;
         &lt;span class=&quot;n&quot;&gt;cardViewLocationLblLeadingConstraint&lt;/span&gt;&lt;span class=&quot;o&quot;&gt;.&lt;/span&gt;&lt;span class=&quot;n&quot;&gt;constant&lt;/span&gt; &lt;span class=&quot;o&quot;&gt;=&lt;/span&gt; &lt;span class=&quot;mi&quot;&gt;26&lt;/span&gt;
     &lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;
-&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;</content>
+&lt;span class=&quot;p&quot;&gt;}&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/figure&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://www.notion.so/seyoon37/1-Meet-async-await-in-Swift-d5b31f54404a44d79696b5fee0200741&quot;&gt;notion test&lt;/a&gt;&lt;/p&gt;</content>
 
       
       
