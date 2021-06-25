@@ -2,7 +2,7 @@
 layout: post
 current: post
 navigation: True
-title: Knowledge List
+title: listup
 date: 2021-06-24 12:53:23
 tags: portfolio
 class: post-template
