@@ -1,8 +1,20 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-06-25T13:25:12+09:00</updated><id>http://localhost:4000/</id><title type="html">bello</title><subtitle>sangeun portfolio</subtitle><entry><title type="html">listup</title><link href="http://localhost:4000/knowledge-list" rel="alternate" type="text/html" title="listup" /><published>2021-06-24T21:53:23+09:00</published><updated>2021-06-24T21:53:23+09:00</updated><id>http://localhost:4000/knowledge-list</id><content type="html" xml:base="http://localhost:4000/knowledge-list">&lt;p&gt;&lt;a href=&quot;https://tintin29110.github.io/smartoffice&quot;&gt;Smart Office&lt;/a&gt;&lt;/p&gt;
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2021-06-25T13:35:40+09:00</updated><id>http://localhost:4000/</id><title type="html">bello</title><subtitle>sangeun portfolio</subtitle><entry><title type="html">listup</title><link href="http://localhost:4000/knowledge-list" rel="alternate" type="text/html" title="listup" /><published>2021-06-24T21:53:23+09:00</published><updated>2021-06-24T21:53:23+09:00</updated><id>http://localhost:4000/knowledge-list</id><content type="html" xml:base="http://localhost:4000/knowledge-list">&lt;h2 id=&quot;project&quot;&gt;Project&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;참여한 프로젝트&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://tintin29110.github.io/smartoffice&quot;&gt;Smart Office&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;library&quot;&gt;Library&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;개발이나 업무 하면서 후에도 유용하게 쓰일 지식을 모아둔 곳&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.notion.so/seyoon37/b310fb9c48034e8eb0116a20e6850647?v=4a918eb3861840269b33b8a142ce2295&quot;&gt;Swift Code Snippet&lt;/a&gt;&lt;/p&gt;
 
-&lt;p&gt;&lt;a href=&quot;https://www.notion.so/seyoon37/Jenkins-5586472fa10046a9a80ceb88d2d9b5ed&quot;&gt;Jenkins&lt;/a&gt;&lt;/p&gt;</content><author><name>Sangeun Yoon</name></author><category term="portfolio" /><summary type="html">Smart Office</summary></entry><entry><title type="html">Jenkins macOS Agent</title><link href="http://localhost:4000/jenkins-mac-os-agent" rel="alternate" type="text/html" title="Jenkins macOS Agent" /><published>2021-05-07T19:47:00+09:00</published><updated>2021-05-07T19:47:00+09:00</updated><id>http://localhost:4000/jenkins-mac-os-agent</id><content type="html" xml:base="http://localhost:4000/jenkins-mac-os-agent">&lt;h1 id=&quot;mac-os-agent&quot;&gt;mac OS Agent&lt;/h1&gt;
+&lt;p&gt;&lt;a href=&quot;https://www.notion.so/seyoon37/Jenkins-5586472fa10046a9a80ceb88d2d9b5ed&quot;&gt;Jenkins&lt;/a&gt;&lt;/p&gt;</content><author><name>Sangeun Yoon</name></author><category term="portfolio" /><summary type="html">Project 참여한 프로젝트</summary></entry><entry><title type="html">Jenkins macOS Agent</title><link href="http://localhost:4000/jenkins-mac-os-agent" rel="alternate" type="text/html" title="Jenkins macOS Agent" /><published>2021-05-07T19:47:00+09:00</published><updated>2021-05-07T19:47:00+09:00</updated><id>http://localhost:4000/jenkins-mac-os-agent</id><content type="html" xml:base="http://localhost:4000/jenkins-mac-os-agent">&lt;h1 id=&quot;mac-os-agent&quot;&gt;mac OS Agent&lt;/h1&gt;
 
 &lt;p&gt;Master (Jenkins Server)&lt;/p&gt;
 

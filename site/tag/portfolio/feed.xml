@@ -4,7 +4,7 @@
   <generator uri="https://jekyllrb.com/" version="3.7.4">Jekyll</generator>
   <link href="http://localhost:4000/tag/portfolio/feed.xml" rel="self" type="application/atom+xml" />
   <link href="http://localhost:4000/" rel="alternate" type="text/html" />
-  <updated>2021-06-25T13:25:12+09:00</updated>
+  <updated>2021-06-25T13:35:40+09:00</updated>
   <id>http://localhost:4000/tag/portfolio/feed.xml</id>
 
   
@@ -37,7 +37,19 @@
       <published>2021-06-24T21:53:23+09:00</published>
       <updated>2021-06-24T21:53:23+09:00</updated>
       <id>http://localhost:4000/knowledge-list</id>
-      <content type="html" xml:base="http://localhost:4000/knowledge-list">&lt;p&gt;&lt;a href=&quot;https://tintin29110.github.io/smartoffice&quot;&gt;Smart Office&lt;/a&gt;&lt;/p&gt;
+      <content type="html" xml:base="http://localhost:4000/knowledge-list">&lt;h2 id=&quot;project&quot;&gt;Project&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;참여한 프로젝트&lt;/p&gt;
+&lt;/blockquote&gt;
+
+&lt;p&gt;&lt;a href=&quot;https://tintin29110.github.io/smartoffice&quot;&gt;Smart Office&lt;/a&gt;&lt;/p&gt;
+
+&lt;p&gt;&lt;br /&gt;&lt;br /&gt;&lt;/p&gt;
+
+&lt;h2 id=&quot;library&quot;&gt;Library&lt;/h2&gt;
+&lt;blockquote&gt;
+  &lt;p&gt;개발이나 업무 하면서 후에도 유용하게 쓰일 지식을 모아둔 곳&lt;/p&gt;
+&lt;/blockquote&gt;
 
 &lt;p&gt;&lt;a href=&quot;https://www.notion.so/seyoon37/b310fb9c48034e8eb0116a20e6850647?v=4a918eb3861840269b33b8a142ce2295&quot;&gt;Swift Code Snippet&lt;/a&gt;&lt;/p&gt;
 
@@ -62,7 +74,7 @@
       
 
       
-        <summary type="html">Smart Office</summary>
+        <summary type="html">Project 참여한 프로젝트</summary>
       
 
       
